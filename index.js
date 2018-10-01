@@ -4,10 +4,7 @@ document.getElementById('user').innerHTML =
 'Sonali Marlin'
 
 //problem-1
-
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// Create a function called addNumbers that takes two parameters each a number and returns a single value of the two parameters added together. Call addNumbers(3,5) and display the result for your answer.
-
 document.getElementById("problem-1").innerHTML = addNumbers(3,5);
 
 function addNumbers(num, num2) {
@@ -15,50 +12,56 @@ function addNumbers(num, num2) {
 }
 
 //problem-2
-
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("problem-2").innerHTML =
+document.getElementById("problem-2").innerHTML = subtractNumbers(10,8);
 
+function subtractNumbers(num, num2){
+  return num - num2;
+}
 //problem-3
-
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("problem-3").innerHTML =
+document.getElementById("problem-3").innerHTML = showResultsInBody(5);
 
+function showResultsInBody(param) {
+  console.log("The result of your calculation is " + param);
+}
 
 //problem-4
-
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("problem-4").innerHTML =
+document.getElementById("problem-4").innerHTML = showResults(5);
 
+function showResults(param) {
+  return(param);
+}
 
 //problem-5
-
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("problem-5").innerHTML =
+document.getElementById("problem-5").innerHTML = multiplyNumbers(5,10);
 
+function multiplyNumbers(n, n1){
+  return n * n1;
+}
 
 //problem-6
-
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("problem-6").innerHTML =
+document.getElementById("problem-6").innerHTML = divideNumbers(20,4);
 
+function divideNumbers(n, n1){
+  return n / n1;
+}
 
 //problem-7
-
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("problem-7").innerHTML =
-
+document.getElementById("problem-7").innerHTML = showResults(addNumbers(3,5));
 
 //problem-8
-
+// Using ONLY function calls solve this equation. (5+6)+(7+3)
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("problem-8").innerHTML =
-
+document.getElementById("problem-8").innerHTML = showResults(addNumbers(addNumbers(5,6),addNumbers(7,3)));
 
 //problem-9
-
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("problem-9").innerHTML =
+document.getElementById("problem-9").innerHTML = showResults(subtractNumbers(multiplyNumbers(15,4),divideNumbers(10,2)));
 
 
 //challenge-1
