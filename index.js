@@ -65,8 +65,18 @@ document.getElementById("problem-9").innerHTML = showResults(subtractNumbers(mul
 
 
 //challenge-1
-
+// Create a new addition function called addTheWorld. It should be able to take ANY number of parameters and display the sum of them all. Call addTheWorld(5,2,8). Call addTheWorld(10,5,3,2). Call addTheWorld(25). (Hint:Look up the arguments keyword)
 // place functions and supporting code here.  Uncomment line below and place answer the to right of = sign
-// document.getElementById("challenge-1.1").innerHTML = addTheWorld(5,2,8)
-// document.getElementById("challenge-1.2").innerHTML = addTheWorld(10,5,3,2)
-// document.getElementById("challenge-1.3").innerHTML = addTheWorld(25)
+document.getElementById("challenge-1.1").innerHTML = addTheWorld(5,2,8);
+
+function addTheWorld (...args) {
+  var sum = 0;
+  for (var i = 0; i < args.length; i++) {
+    sum += args[i];
+  }
+  console.log(sum);
+  return sum;
+}
+
+document.getElementById("challenge-1.2").innerHTML = addTheWorld(10,5,3,2)
+document.getElementById("challenge-1.3").innerHTML = addTheWorld(25)
